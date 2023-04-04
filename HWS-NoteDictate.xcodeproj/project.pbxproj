@@ -12,6 +12,7 @@
 		21AE9C9E29DB080100ACE5FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE9C9D29DB080100ACE5FC /* ContentView.swift */; };
 		21AE9CA029DB080300ACE5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21AE9C9F29DB080300ACE5FC /* Assets.xcassets */; };
 		21AE9CA329DB080300ACE5FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21AE9CA229DB080300ACE5FC /* Preview Assets.xcassets */; };
+		21BC7FF729DC50EF00DDE7BE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC7FF629DC50EF00DDE7BE /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		21AE9C9D29DB080100ACE5FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21AE9C9F29DB080300ACE5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21AE9CA229DB080300ACE5FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21BC7FF629DC50EF00DDE7BE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		21AE9C8929DB080000ACE5FC = {
 			isa = PBXGroup;
 			children = (
+				21BC7FF629DC50EF00DDE7BE /* DetailView.swift */,
 				21AE9C9A29DB080100ACE5FC /* HWS-NoteDictate Watch App */,
 				21AE9C9129DB080100ACE5FC /* Products */,
 			);
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21AE9C9E29DB080100ACE5FC /* ContentView.swift in Sources */,
+				21BC7FF729DC50EF00DDE7BE /* DetailView.swift in Sources */,
 				21AE9C9C29DB080100ACE5FC /* HWS_NoteDictateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +394,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.hws.vvc.HWS-NoteDictate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
 			};
 			name = Debug;
 		};
@@ -406,7 +414,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.hws.vvc.HWS-NoteDictate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
