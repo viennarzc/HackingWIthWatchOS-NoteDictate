@@ -34,7 +34,7 @@ struct ContentView: View {
                 ForEach(0..<notes.count, id: \.self) { i in
                     
                     NavigationLink {
-                        DetailView(index: i, note: notes[i])
+                        DetailView(index: i, note: notes[i], totalNotes: notes.count)
                     } label: {
                         Text(notes[i].text)
                             .lineLimit(1)
